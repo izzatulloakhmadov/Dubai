@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dubai</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jonathon_anderson">Jonathon Anderson</string>
+    <string name="jonathan_email_com">jonathan@email.com</string>
+    <string name="_62_112_3288_9111">+62 112-3288-9111</string>
+    <string name="_68_000">68 000</string>
+    <string name="a">68 000</string>
+    <string name="rooms">Rooms</string>
+    <string name="_2_rooms">2 rooms</string>
+    <string name="town_house">🏠 Town house</string>
+</resources>

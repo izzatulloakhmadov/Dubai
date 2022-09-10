@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EddVillaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="38dp"
+            android:text="Add Villa"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imagev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_iconss"
+            android:background="@drawable/dumo"
+            android:padding="17dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="24dp" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="243dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="28dp"
+            android:text="Hi name, Fill detail of real estate "
+            app:layout_constraintTop_toBottomOf="@id/imagev"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="24dp" />
+
+        <Spinner
+            android:id="@+id/spiner1"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="207dp"
+            android:background="@drawable/recccc" />
+
+        <Spinner
+            android:id="@+id/spiner2"
+
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/spiner1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/recccc" />
+
+        <EditText
+            android:id="@+id/editt"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/spiner2"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="villa Number"
+            android:paddingStart="15dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="327dp"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/editt"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="comment"
+            android:paddingBottom="140dp"
+            android:paddingStart="15dp" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/edit"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            android:layout_marginTop="24dp"
+            android:text="Listing type"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            app:checkedChip="@id/chipn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipn"
+                style="@style/chip_style"
+                android:layout_width="97dp"
+                android:layout_height="52dp"
+                android:text="🔑️ Buy"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chip_style"
+                android:layout_width="97dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="9dp"
+                android:text="💰️ Sell"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chip"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            android:layout_marginTop="24dp"
+            android:text="Project Status"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            app:selectionRequired="true"
+            app:singleSelection="true"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="120dp"
+                android:layout_height="52dp"
+                style="@style/chip_style"
+                android:text="Completed"
+                android:textSize="14sp"
+                android:textAlignment="center" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:text="Off Plan"
+                style="@style/chip_style"
+                android:textSize="14sp"
+                android:layout_marginStart="9dp"
+                android:textAlignment="center" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chip2"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            android:layout_marginTop="24dp"
+            android:text="Project Types"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip3"
+            android:layout_width="0dp"
+            app:selectionRequired="true"
+            app:singleSelection="true"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="70dp"
+                android:layout_height="52dp"
+                style="@style/chip_style"
+                android:text="All"
+                android:textSize="14sp"
+                android:textAlignment="center" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="130dp"
+                android:layout_height="52dp"
+                style="@style/chip_style"
+
+                android:text="🏠️️ Town House"
+                android:textSize="14sp"
+                android:layout_marginStart="9dp"
+                android:textAlignment="center" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="120dp"
+                android:layout_height="52dp"
+                android:text="🏢 Appartment"
+                style="@style/chip_style"
+
+                android:textSize="14sp"
+                android:layout_marginStart="9dp"
+                android:textAlignment="center" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chip3"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            android:layout_marginTop="24dp"
+            android:text="Property Images"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="327dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rec"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image1"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            android:layout_marginTop="24dp"
+            android:text="Orginal Price"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/text5"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="$ 100 000"
+            android:drawableEnd="@drawable/ic_dollor"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Sell Price"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            app:layout_constraintTop_toBottomOf="@id/edit1" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/text6"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="$ 100 000"
+            android:drawableEnd="@drawable/ic_dollor"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@id/edit2"
+            android:background="@drawable/rec"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp">
+
+            <ImageButton
+                android:id="@+id/plas"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="180dp"
+                android:src="@drawable/ic_baseline_minimize_24" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                android:textSize="18sp" />
+
+
+            <ImageButton
+                android:id="@+id/minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_baseline_add_24" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/liner"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Total size"
+            android:paddingStart="15dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/edit4"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="plot Size"
+            android:paddingStart="15dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Owner docs"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/spiner2"
+            app:layout_constraintTop_toBottomOf="@id/edit5" />
+
+        <EditText
+            android:id="@+id/edit6"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/text7"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="owner Name"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/edit7"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/edit6"
+            android:background="@drawable/rec"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="phone Numer"
+            android:paddingStart="15dp"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="327dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/edit7"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rec"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material"
+            android:layout_marginTop="24dp"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/image2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="25dp"
+            android:text="Ovner details.pdf"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/ic_baseline_featured_play_list_24"
+            android:paddingEnd="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@id/material"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="25dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/ic_baccc"
+            android:text="Save"
+            android:textSize="20sp"
+            android:paddingStart="13dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

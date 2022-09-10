@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="375dp"
+    android:layout_height="812dp"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imagest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dumo"
+            android:padding="20dp"
+            android:src="@drawable/ic_iconss"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="124dp"
+            android:text="Let’s Sign In 👇 "
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="175dp"
+            android:textSize="25sp"
+            android:textColor="#252B5C"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="184dp"
+            android:layout_marginStart="24dp"
+            android:text="Enter your email and password to login"
+            android:textSize="12sp"
+            android:textColor="#53587A"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            android:hint="Email"
+            android:paddingStart="46dp"
+            android:paddingTop="28dp"
+            android:drawableStart="@drawable/ic_baseline_login_24"
+            android:paddingBottom="27dp"
+            android:textColor="#A1A5C1"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="243dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rec"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            android:hint="Password"
+            android:paddingStart="46dp"
+            android:paddingTop="28dp"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:paddingBottom="27dp"
+            android:textColor="#A1A5C1"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="329dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rec"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/showpass"
+            android:layout_width="91dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="415dp"
+            android:layout_marginEnd="24dp"
+            android:text="Show password"
+            android:textColor="#252B5C"
+            android:textSize="12sp"
+            android:textStyle="normal"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="474dp"
+            android:textAllCaps="false"
+            android:text="Login"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/but"/>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

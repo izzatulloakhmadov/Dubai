@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/table_style"
+        android:gravity="center"
+        android:text="PROPERTY" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/table_style"
+        android:gravity="center"
+        android:text="EREA(SQFT)" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="100dp"
+
+        android:layout_height="50dp"
+        android:background="@drawable/table_style"
+        android:gravity="center"
+        android:text="PROPERTY" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="100dp"
+
+        android:layout_height="50dp"
+        android:background="@drawable/table_style"
+        android:gravity="center"
+        android:text="PRICE(USD)" />
+
+</LinearLayout>

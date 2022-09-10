@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.dubai.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.dubai.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.dubai.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_eddVillaFragment"
+            app:destination="@id/eddVillaFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userControlFragment"
+            app:destination="@id/userControlFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_importFragment"
+            app:destination="@id/importFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_communityControlFragment"
+            app:destination="@id/communityControlFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_login1Fragment2"
+            app:destination="@id/login1Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/eddVillaFragment"
+        android:name="com.example.dubai.EddVillaFragment"
+        android:label="fragment_edd_villa"
+        tools:layout="@layout/fragment_edd_villa" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.dubai.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.example.dubai.BottomSheetFragment"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
+    <fragment
+        android:id="@+id/userControlFragment"
+        android:name="com.example.dubai.UserControlFragment"
+        android:label="fragment_user_control"
+        tools:layout="@layout/fragment_user_control" >
+        <action
+            android:id="@+id/action_userControlFragment_to_plasControlFragment"
+            app:destination="@id/plasControlFragment" />
+        <action
+            android:id="@+id/action_userControlFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plasControlFragment"
+        android:name="com.example.dubai.plasControlFragment"
+        android:label="fragment_plas_control"
+        tools:layout="@layout/fragment_plas_control" >
+        <action
+            android:id="@+id/action_plasControlFragment_to_userControlFragment"
+            app:destination="@id/userControlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/importFragment"
+        android:name="com.example.dubai.ImportFragment"
+        android:label="fragment_import"
+        tools:layout="@layout/fragment_import" >
+        <action
+            android:id="@+id/action_importFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityControlFragment"
+        android:name="com.example.dubai.CommunityControlFragment"
+        android:label="fragment_community_control"
+        tools:layout="@layout/fragment_community_control" >
+        <action
+            android:id="@+id/action_communityControlFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_communityControlFragment_to_addComunnityFragment"
+            app:destination="@id/addComunnityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login1Fragment2"
+        android:name="com.example.dubai.Login1Fragment"
+        android:label="Login1Fragment" >
+        <action
+            android:id="@+id/action_login1Fragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addComunnityFragment"
+        android:name="com.example.dubai.AddComunnityFragment"
+        android:label="fragment_add_comunnity"
+        tools:layout="@layout/fragment_add_comunnity" >
+        <action
+            android:id="@+id/action_addComunnityFragment_to_communityControlFragment"
+            app:destination="@id/communityControlFragment" />
+    </fragment>
+</navigation>

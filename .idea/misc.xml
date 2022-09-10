@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/bacr.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/but.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/dumo.xml" value="0.175" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/dumoq.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/ic_iconss.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/line.xml" value="0.1595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/rad.xml" value="0.175" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/rec.xml" value="0.1595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/recccc.xml" value="0.175" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/rectangle.xml" value="0.175" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/table_style.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/text.xml" value="0.1595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/textback.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/drawable/zzzzz.xml" value="0.1595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_add_comunnity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_add_listing.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_aw_snap.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_bottom_sheet1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_bottom_sheet2.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_community_control.xml" value="0.15138888888888888" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_detail.xml" value="0.3559445660102115" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_edd_villa.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_edit_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_import.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_login1.xml" value="0.2388888888888889" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_modern_house.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_plas_control.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_search.xml" value="0.176" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_search_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_sheet_search.xml" value="0.5712890625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_somenthing.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/fragment_user_control.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/shape.xml" value="0.253125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/layout/table_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.132" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Dubai/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.132" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

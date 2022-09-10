@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BottomSheetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="243dp"
+            android:text="Filter"
+            android:textColor="#252B5C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="55dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/textback"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="187dp"
+            android:text="Type of sale"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filter" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            app:checkedChip="@id/chipn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/type"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipn"
+                style="@style/chip_style"
+                android:layout_width="125dp"
+                android:layout_height="52dp"
+                android:text="Sale "
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chip_style"
+                android:layout_width="125dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="9dp"
+                android:text="Reant"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="187dp"
+            android:text="Select Community"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip" />
+
+        <Spinner
+            android:id="@+id/spiner1"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="187dp"
+            android:text="Select Property"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spiner1" />
+
+        <Spinner
+            android:id="@+id/spiner2"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="187dp"
+            android:text="Property Type"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spiner2" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                style="@style/chip_style"
+                android:layout_width="70dp"
+                android:layout_height="52dp"
+                android:text="All"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chip_style"
+                android:layout_width="130dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="9dp"
+                android:text="🏠️️House"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chip_style"
+                android:layout_width="120dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="9dp"
+                android:text="🏢 Appartment"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="187dp"
+            android:text="Type of sale"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip3" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            app:checkedChip="@id/chipn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/chip_style"
+                android:layout_width="125dp"
+                android:layout_height="52dp"
+                android:text="Complated "
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chip_style"
+                android:layout_width="125dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="9dp"
+                android:text="Off Plan"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="187dp"
+            android:text="Price"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip1" />
+
+        <LinearLayout
+            android:id="@+id/liner"
+            app:layout_constraintTop_toBottomOf="@id/text5"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="139dp"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/text5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/rec"
+                android:drawableStart="@drawable/ic_dolor"
+                android:paddingStart="20dp"
+                android:hint="@string/_68_000"
+                android:textColorHint="@color/black"
+                android:textAlignment="center"
+                android:autofillHints="" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_sync_alt_24"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="139dp"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/text5"
+                android:layout_margin="20dp"
+                android:background="@drawable/rec"
+                android:drawableStart="@drawable/ic_dolor"
+                android:paddingStart="20dp"
+                android:hint="@string/a"
+                android:textColorHint="@color/black"
+                android:textAlignment="center"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="t" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="187dp"
+            android:text="@string/rooms"
+            android:textColor="#252B5C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/liner" />
+
+        <EditText
+            android:id="@+id/edit1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@id/text6"
+            android:layout_margin="20dp"
+            android:background="@drawable/rec"
+            android:paddingStart="20dp"
+            android:hint="@string/_2_rooms"
+            android:textColorHint="@color/black"
+            tools:ignore="RtlSymmetry"
+            android:autofillHints="" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edvila"
+            android:layout_width="267dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#1E2038"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Apply Filter (78)"
+            android:textAllCaps="false"
+            app:cornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
